@@ -1,0 +1,730 @@
+{
+  "id": "2590469",
+  "name": "SWFT-widget",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "39202577",
+      "name": "Portkey",
+      "font_class": "Portkey",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "39081033",
+      "name": "plena",
+      "font_class": "Plena",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "38926512",
+      "name": "JoyIDWallet",
+      "font_class": "JoyIDWallet",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "38441370",
+      "name": "FoxWallet",
+      "font_class": "FoxWallet",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "38118494",
+      "name": "HAVAH",
+      "font_class": "HAVAH",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "37330872",
+      "name": "Patex",
+      "font_class": "Patex",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "37260104",
+      "name": "Compass",
+      "font_class": "Compass",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "36989850",
+      "name": "imToken",
+      "font_class": "imToken",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "35528425",
+      "name": "Halo",
+      "font_class": "Halo",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "35527304",
+      "name": "Unisat",
+      "font_class": "Unisat",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "35423782",
+      "name": "SUI",
+      "font_class": "SuiWallet",
+      "unicode": "e701",
+      "unicode_decimal": 59137
+    },
+    {
+      "icon_id": "35257036",
+      "name": "Crypto",
+      "font_class": "Crypto",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "34820278",
+      "name": "exodus",
+      "font_class": "Exodus",
+      "unicode": "e6ff",
+      "unicode_decimal": 59135
+    },
+    {
+      "icon_id": "34751675",
+      "name": "valora",
+      "font_class": "Valora",
+      "unicode": "e6fc",
+      "unicode_decimal": 59132
+    },
+    {
+      "icon_id": "34722482",
+      "name": "韩文2",
+      "font_class": "korea-normal",
+      "unicode": "e6fd",
+      "unicode_decimal": 59133
+    },
+    {
+      "icon_id": "34722483",
+      "name": "韩文",
+      "font_class": "korea",
+      "unicode": "e6fe",
+      "unicode_decimal": 59134
+    },
+    {
+      "icon_id": "34600553",
+      "name": "SAFE",
+      "font_class": "SAFE",
+      "unicode": "e6f9",
+      "unicode_decimal": 59129
+    },
+    {
+      "icon_id": "34600554",
+      "name": "DBC",
+      "font_class": "DBC",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "6570236",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "15378543",
+      "name": "line",
+      "font_class": "line",
+      "unicode": "ebf5",
+      "unicode_decimal": 60405
+    },
+    {
+      "icon_id": "33887164",
+      "name": "Vector",
+      "font_class": "AuroxWallet",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "33808143",
+      "name": "CLVWallet",
+      "font_class": "CLVWallet",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
+      "icon_id": "33720145",
+      "name": "MSafe",
+      "font_class": "MSafe",
+      "unicode": "e6f5",
+      "unicode_decimal": 59125
+    },
+    {
+      "icon_id": "33490615",
+      "name": "Openblock",
+      "font_class": "OpenBlock",
+      "unicode": "e6ee",
+      "unicode_decimal": 59118
+    },
+    {
+      "icon_id": "33236460",
+      "name": "coin98",
+      "font_class": "Coin98",
+      "unicode": "e6e7",
+      "unicode_decimal": 59111
+    },
+    {
+      "icon_id": "32676679",
+      "name": "onekey",
+      "font_class": "OneKey",
+      "unicode": "e6e4",
+      "unicode_decimal": 59108
+    },
+    {
+      "icon_id": "32437153",
+      "name": "petra",
+      "font_class": "Petra",
+      "unicode": "e6e3",
+      "unicode_decimal": 59107
+    },
+    {
+      "icon_id": "31394898",
+      "name": "itoken",
+      "font_class": "iToken",
+      "unicode": "e6e2",
+      "unicode_decimal": 59106
+    },
+    {
+      "icon_id": "31128976",
+      "name": "MPC",
+      "font_class": "MPCWallet",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "29914582",
+      "name": "充币",
+      "font_class": "chongbi",
+      "unicode": "e6d3",
+      "unicode_decimal": 59091
+    },
+    {
+      "icon_id": "29914583",
+      "name": "兑换",
+      "font_class": "duihuan2",
+      "unicode": "e6d4",
+      "unicode_decimal": 59092
+    },
+    {
+      "icon_id": "29914584",
+      "name": "提币",
+      "font_class": "tibi",
+      "unicode": "e6d5",
+      "unicode_decimal": 59093
+    },
+    {
+      "icon_id": "29914585",
+      "name": "转账",
+      "font_class": "zhuanzhang",
+      "unicode": "e6d6",
+      "unicode_decimal": 59094
+    },
+    {
+      "icon_id": "28622301",
+      "name": "bridgers",
+      "font_class": "bridgers",
+      "unicode": "e6c5",
+      "unicode_decimal": 59077
+    },
+    {
+      "icon_id": "28581277",
+      "name": "BitKeep",
+      "font_class": "BitKeep",
+      "unicode": "e6c4",
+      "unicode_decimal": 59076
+    },
+    {
+      "icon_id": "28428979",
+      "name": "Keystone",
+      "font_class": "Keystone",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "28251946",
+      "name": "LeafWallet",
+      "font_class": "LeafWallet",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "28012673",
+      "name": "OKX",
+      "font_class": "OKExWallet",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "27806261",
+      "name": "标题",
+      "font_class": "a-bianzu14",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
+      "icon_id": "27521025",
+      "name": "tokenpocket",
+      "font_class": "TokenPocket",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "27508852",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "27475782",
+      "name": "HareWallet",
+      "font_class": "HareWallet",
+      "unicode": "e6b5",
+      "unicode_decimal": 59061
+    },
+    {
+      "icon_id": "27475610",
+      "name": "trezor",
+      "font_class": "trezor1",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    },
+    {
+      "icon_id": "27475606",
+      "name": "ledger",
+      "font_class": "ledger",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "27225834",
+      "name": "duihao",
+      "font_class": "duihao1",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "27134837",
+      "name": "SSWAP",
+      "font_class": "SSWAP",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "21037181",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "26671158",
+      "name": "CRU ",
+      "font_class": "CRU",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "26640871",
+      "name": "XUMM",
+      "font_class": "XUMM",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "26359961",
+      "name": "编组 4",
+      "font_class": "a-bianzu4",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "26355749",
+      "name": "邮件 (1)备份",
+      "font_class": "a-youjian1beifen",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "8127577",
+      "name": "帮助",
+      "font_class": "help",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "19877121",
+      "name": "保录升学 - 4",
+      "font_class": "zhengpinbaozhang-duigou",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "5387522",
+      "name": "关闭",
+      "font_class": "guanbi1",
+      "unicode": "eaf2",
+      "unicode_decimal": 60146
+    },
+    {
+      "icon_id": "11372666",
+      "name": "分享",
+      "font_class": "fenxiang",
+      "unicode": "e8b0",
+      "unicode_decimal": 59568
+    },
+    {
+      "icon_id": "25805489",
+      "name": "cha",
+      "font_class": "cha1",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "21286599",
+      "name": "滑点",
+      "font_class": "shezhi",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "25494738",
+      "name": "Liquality",
+      "font_class": "LiqualityWallet",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "25128522",
+      "name": "hyperpay",
+      "font_class": "HyperPay",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "24998120",
+      "name": "GPB ",
+      "font_class": "GPB",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "24886625",
+      "name": "Terra",
+      "font_class": "TerraStation",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "24886626",
+      "name": "Temple",
+      "font_class": "Temple",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "24584333",
+      "name": "phantom",
+      "font_class": "Phantom",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "24303816",
+      "name": "TT",
+      "font_class": "TT",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "24303797",
+      "name": "TT",
+      "font_class": "TT1",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "23987872",
+      "name": "VIP备份",
+      "font_class": "VIPbeifen",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "23646625",
+      "name": "Wallet-Connect",
+      "font_class": "walletConnect",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "23643143",
+      "name": "BitpieWallet ",
+      "font_class": "BitpieWallet",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "23503585",
+      "name": "Nabox",
+      "font_class": "Nabox",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "23375027",
+      "name": "select",
+      "font_class": "select",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "23375028",
+      "name": "fuzhi备份",
+      "font_class": "fuzhibeifen",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "4677277",
+      "name": "增加",
+      "font_class": "zengjia",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "23313424",
+      "name": "cha",
+      "font_class": "cha",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "23185369",
+      "name": "打折 (1)",
+      "font_class": "a-dazhe1",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "23150227",
+      "name": "TrustWallet",
+      "font_class": "TrustWallet",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "23149794",
+      "name": "火币钱包",
+      "font_class": "HuobiWallet",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "23149796",
+      "name": "ellipal",
+      "font_class": "Ellipal",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "23113471",
+      "name": "tronlink2",
+      "font_class": "TronLink",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "23112768",
+      "name": "ONT",
+      "font_class": "ONTO",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "23112738",
+      "name": "DOT",
+      "font_class": "DOT",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "22866449",
+      "name": "coinbase",
+      "font_class": "CoinbaseWallet",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "22703827",
+      "name": "safepal",
+      "font_class": "safepal",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "22696183",
+      "name": "麦子钱包",
+      "font_class": "MathWallet",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "22696184",
+      "name": "MetaMask",
+      "font_class": "MetaMask",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "22438943",
+      "name": "doc",
+      "font_class": "doc",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "20096666",
+      "name": "feiji",
+      "font_class": "feiji",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "20096667",
+      "name": "MM",
+      "font_class": "MM",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "20096669",
+      "name": "tuite",
+      "font_class": "tuite",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "22421658",
+      "name": "faq",
+      "font_class": "faq",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "22421659",
+      "name": "使用教程备份 2",
+      "font_class": "a-shiyongjiaochengbeifen2",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "20970256",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "20965503",
+      "name": "提示",
+      "font_class": "tishi",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "9808272",
+      "name": "uni",
+      "font_class": "uni",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "19035310",
+      "name": "1INCH",
+      "font_class": "1INCH",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "20519710",
+      "name": "dodo_liquidity",
+      "font_class": "dodo_liquidity",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "22212670",
+      "name": "未选择币种",
+      "font_class": "weixuanzebizhong",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "20965499",
+      "name": "英文",
+      "font_class": "yingwen",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "20965501",
+      "name": "中文",
+      "font_class": "zhongwen",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "22031016",
+      "name": "兑换1",
+      "font_class": "duihuan1",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "20965500",
+      "name": "链接",
+      "font_class": "lianjie",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "21365743",
+      "name": "下拉",
+      "font_class": "xiala2",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "22030936",
+      "name": "兑换",
+      "font_class": "duihuan",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "22030888",
+      "name": "SWFT",
+      "font_class": "ziyuan7",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    }
+  ]
+}

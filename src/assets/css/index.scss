@@ -1,0 +1,202 @@
+@font-face {
+    font-family: Poppins;
+    src: url('./Poppins-Bold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('./Poppins-Bold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url('./Poppins-Light.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('./Poppins-Medium.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('./Poppins-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('./Poppins-SemiBold.ttf');
+    font-display: swap;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #f4f8ff;
+
+    // background-image: radial-gradient(#00356e, #01132e, #000815);
+    background-size: 200% 200%;
+    background-position: bottom left;
+    font-family: Poppins;
+    -webkit-text-size-adjust: none;
+
+    // ::-webkit-scrollbar {
+    //     width: 0 !important
+    // }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+
+.border-box {
+    width: 100%;
+    box-sizing: border-box;
+}
+.wallet-popper{
+    padding: 0!important;
+    border: none!important;
+    border-radius: 10px!important;
+    width: 350px;
+    &.mb{
+        width: 96%;
+        left: 2% !important;
+    }
+    .popover-content{
+        background: #F2F7FF;
+        box-shadow: 0px 7px 9px 0px rgba(40, 127, 250, 0.11);
+        border-radius: 20px!important;
+        padding: 20px;
+        .name{
+            height: 29px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #000000;
+            line-height: 29px;
+        }
+        .address{
+            height: 20px;
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 600;
+            color: #1774F6;
+            line-height: 20px;
+            margin-top: 10px;
+        }
+        .link{
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #3E5069;
+            line-height: 17px;
+            flex-wrap: wrap;
+            .link-list{
+                cursor: pointer;
+                margin-top: 15px;
+                &:hover{
+                    color:#1774F6;
+                }
+            }
+            svg{
+                width: 13px;
+                height: 15px;
+                float: left;
+            }
+        }
+        .btns{
+            display: flex;
+            margin-top: 15px;
+            justify-content: space-between;
+            .qh{
+                width: 123px;
+                height: 32px;
+                line-height: 30px;
+                background: #DBEAFF;
+                border-radius: 7px;
+                border: 1px solid #BED9FF;
+                padding: 0;
+                font-size: 16px;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+                color: #1774F6;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+            .dk{
+                width: 123px;
+                height: 32px;
+                line-height: 30px;
+                background: #FFF0F0;
+                border-radius: 7px;
+                border: 1px solid #FFDEDE;
+                padding: 0;
+                font-size: 16px;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+                color: #D34242;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+.noChangeNetwork{
+    .van-dialog__content{
+        min-height: 90px!important;
+        .van-dialog__message{
+            padding: 16px 24px !important;
+            font-size: 12px!important;
+            font-family: PingFangSC-Semibold, PingFang SC;
+        }
+    }
+}
+.van-dialog__content{
+    min-height: 90px!important;
+    .van-dialog__message{
+        padding: 16px 24px !important;
+        font-size: 14px!important;
+        font-family: PingFangSC-Semibold, PingFang SC;
+    }
+  }
+
+.staking{
+    .el-dialog{
+        border-radius: 10px!important;
+        max-width: 500px!important;
+        background: #FFFFFF!important;
+        .el-dialog__header{
+            font-size: .37rem;
+            font-family: Poppins-Bold, Poppins;
+            font-weight: bold;
+            color: #000000;
+            .el-dialog__title{
+                font-size: .37rem;
+            }
+        }
+        .el-dialog__body{
+            padding: 20px 20px 20px!important;
+        }
+    }
+}

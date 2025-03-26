@@ -1,0 +1,20 @@
+$default: #277ffa;
+$defaultDeep: #0064f1;
+
+.themeBg {
+  background: $default !important;
+}
+
+.themeDeep {
+  background: $defaultDeep !important;
+}
+
+.widget {
+  .themeBg {
+    background: $default !important;
+  }
+
+  .themeDeep {
+    background: $defaultDeep !important;
+  }
+}
