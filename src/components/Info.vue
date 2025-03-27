@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="list-info" v-if="info && sourceFlag != 'burndex'">
-        <div class="free-gas" v-if="info.dex == 'SWFT' && isFreeGas">
+        <div class="free-gas" v-if="info.dex == 'OmniBridge' && isFreeGas">
           <img class="sd" src="../assets/img/sd1.svg" alt="" />
           <div class="free-text">
             <span>
@@ -26,7 +26,7 @@
           <div class="item item1">
             <img :src="
                 twFlag == 'miningtw' &&
-                (info.dex == 'bridgers1' || info.dex == 'SWFT')
+                (info.dex == 'bridgers1' || info.dex == 'OmniBridge')
                   ? 'https://images.swft.pro/dex/miningTW.png'
                   : info.logoUrl
               " alt="" />
@@ -38,7 +38,7 @@
                   : info.dex
                 : info.dex == 'bridgers1'
                 ? 'MiningTW Bridge'
-                : info.dex == 'SWFT'
+                : info.dex == 'OmniBridge'
                 ? 'MiningTW'
                 : info.dex
             }}
@@ -87,7 +87,7 @@
           <span class="title">
             {{
               info &&
-              info.dex !== 'SWFT' &&
+              info.dex !== 'OmniBridge' &&
               info.dex !== 'bridgers1' &&
               info.dex !== 'Aggregator' &&
               info.dex !== 'bridgers2'
@@ -96,7 +96,7 @@
             }}
             <img v-if="info" id="tips" @mouseover="tipOpen" @click="tipOpen" src="../assets/img/tip.png" />
             <Popover v-model="showPopover" theme="dark" trigger="click" placement="bottom-start" :offset="[-10, 8]" :get-container="getContainer">
-              <div class="tip-content" v-if="info && info.dex === 'SWFT'">
+              <div class="tip-content" v-if="info && info.dex === 'OmniBridge'">
                 {{ $t('feeTip') }}
               </div>
               <div class="tip-content" v-if="
@@ -109,7 +109,7 @@
               </div>
               <div class="tip-content" v-if="
                   info &&
-                  info.dex !== 'SWFT' &&
+                  info.dex !== 'OmniBridge' &&
                   info.dex !== 'bridgers1' &&
                   info.dex !== 'Aggregator' &&
                   info.dex !== 'bridgers2'
@@ -120,7 +120,7 @@
           </span>
           <span class="cont" v-if="info">
             <span v-if="
-                info.dex === 'SWFT' ||
+                info.dex === 'OmniBridge' ||
                 info.dex === 'bridgers1' ||
                 info.dex === 'Aggregator' ||
                 info.dex === 'bridgers2'
@@ -137,7 +137,7 @@
                 sourceFlag === 'kfi'
                   ? ''
                   : sendGas
-                  ? (info.dex === 'SWFT' ? ' + ' : '') +
+                  ? (info.dex === 'OmniBridge' ? ' + ' : '') +
                     sendGas[0] +
                     ' ' +
                     sendGas[1]
@@ -152,7 +152,7 @@
           info &&
           (info.dex === 'bridgers1' ||
             info.dex === 'bridgers2' ||
-            info.dex === 'SWFT' ||
+            info.dex === 'OmniBridge' ||
             info.dex === 'Aggregator') &&
           sourceFlag != 'kfi'
         ">
@@ -164,7 +164,7 @@
           <span v-else>-</span>
         </div>
       </div>
-      <div class="info" v-if="info && info.dex === 'SWFT' && info.burnRate != 0">
+      <div class="info" v-if="info && info.dex === 'OmniBridge' && info.burnRate != 0">
         <div class="info-rate">
           <span class="title">{{ $t('burnRate') }}</span>
           <span class="cont">
@@ -172,7 +172,7 @@
           </span>
         </div>
       </div>
-      <div class="info" v-if="info && info.dex !== 'SWFT'">
+      <div class="info" v-if="info && info.dex !== 'OmniBridge'">
         <div class="info-quantity">
           <span class="title"> {{ $t('slippage') }}</span>
           <span class="cont">
@@ -189,13 +189,6 @@
         <div class="info-quantity">
           <span class="title"> {{ $t('expected') }}</span>
           <span class="cont" v-if="info">
-            <!-- <template v-if="info.dex === 'SWFT'">
-              {{
-                toNumber - (sendGas ? sendGas[0] : 0) > 0
-                  ? (toNumber - (sendGas ? sendGas[0] : 0)).toFixed(6)
-                  : 0
-              }}
-            </template> -->
             <template>
               {{ toNumber }}
             </template>
@@ -471,7 +464,7 @@ export default {
       //监听渠道变化
       if (!data) return;
       //计算出 得到数量
-      if (data.dex === "SWFT") {
+      if (data.dex === "OmniBridge") {
         let number =
           this.fromNumber * data.instantRate * (1 - data.depositCoinFeeRate) -
           data.chainFee;
@@ -485,7 +478,7 @@ export default {
       }
       this.sendGas = [
         `${data.chainFee}`,
-        data.dex === "SWFT" || data.dex === "bridgers1"
+        data.dex === "OmniBridge" || data.dex === "bridgers1"
           ? this.toToken.coinCode || this.toToken.coinCodeShow
           : data.dex === "bridgers2" || data.dex === "Aggregator"
           ? "USDT"
@@ -674,8 +667,8 @@ export default {
         arr[0].diff.push("maximumReturn");
       }
       if (this.isFreeGas) {
-        const swftNoGasList = arr.filter((item) => item.dex == "SWFT");
-        const otherList = arr.filter((item) => item.dex != "SWFT");
+        const swftNoGasList = arr.filter((item) => item.dex == "OmniBridge");
+        const otherList = arr.filter((item) => item.dex != "OmniBridge");
         const noGasNewList = [...swftNoGasList, ...otherList];
         return noGasNewList;
       }
@@ -864,9 +857,9 @@ export default {
         )
           return;
         info = res.data;
-        this.$set(info, "dex", "SWFT");
+        this.$set(info, "dex", "OmniBridge");
         this.$set(info, "isDex", res.data.isDex);
-        this.$set(info, "logoUrl", "https://images.swft.pro/dex/SWFT.png");
+        this.$set(info, "logoUrl", "https://images.allchainbridge.com/dex/OmniBridge.svg");
         this.$set(
           info,
           "toTokenAmount",
@@ -927,7 +920,7 @@ export default {
           if (!isOrigin) {
             resultList = res.data.txData.filter(
               (item) =>
-                item.dex !== "SWFT" &&
+                item.dex !== "OmniBridge" &&
                 item.dex !== "ClassZZ" &&
                 item.dex !== "Bridgers" &&
                 item.dex !== "sSwap" &&

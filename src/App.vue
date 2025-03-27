@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :class="[isPC ? 'pc' : '',sourceFlag,twFlag]">
+  <div id="app" :class="[isPC ? 'pc' : '',sourceFlag]">
     <router-view />
   </div>
 </template>
@@ -9,7 +9,6 @@ export default {
   data(){
     return {
       sourceFlag: localStorage.getItem('sourceFlag'),
-      twFlag:localStorage.getItem('twFlag'),
       utm_source: localStorage.getItem('utm_source'),
     }
   },

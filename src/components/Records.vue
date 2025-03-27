@@ -206,7 +206,7 @@ export default {
     if (this.bridgersFlag == 'bridgers') {
       this.recordType = 'bridgers1'
     } else {
-      this.recordType = 'swft'
+      this.recordType = 'OmniBridge'
     }
     //this.queryAjax()
     this.show = true
@@ -263,7 +263,7 @@ export default {
         pageSize: this.pageSize,
         fromAddress: this.walletAddress,
       }
-      if (this.recordType === 'swft') {
+      if (this.recordType === 'OmniBridge') {
         const res = await baseApi.queryAllTrade(params)
         if (res.resCode == 800) {
           let list = res.data.pageContent

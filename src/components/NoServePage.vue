@@ -13,10 +13,10 @@
       </div>
       <div v-else>
         <p v-if="lang == 'zh'">
-          SWFT AllChain 对您当前所在的国家/地区不提供服务
+          AllChain 对您当前所在的国家/地区不提供服务
         </p>
         <p v-else>
-          SWFT AllChain services are currently unavailable in your country/area.
+          AllChain services are currently unavailable in your country/area.
         </p>
       </div>
     </div>

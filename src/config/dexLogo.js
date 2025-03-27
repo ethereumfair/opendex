@@ -11,7 +11,7 @@ const dexList = {
   ClassZZ: 'https://images.swft.pro/dex/czz.png',
   BinanceBridge:
     'https://images.swft.pro/inch1/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png',
-  SWFT: 'https://images.swft.pro/dex/SWFT.png',
+  OmniBridge: 'https://images.allchainbridge.com/dex/OmniBridge.svg',
   CBridge: 'https://images.swft.pro/dex/cBridge.png',
   Orca: 'https://images.swft.pro/dex/orca.png',
   Axie: 'https://cdn.axieinfinity.com/landing-page/_next/static/images/logo-f3b5c962671a2516bc9fef42ad9e9145@1x.webp',

@@ -58,12 +58,11 @@ export default {
   trade_fail: 'Fail',
   deposit_failed: 'Deposit failed',
   FAQ: 'FAQ',
-  footerRightFont: 'support@swftcoin.org',
+  footerRightFont: '',
   noRecod: 'No record',
   orderInfoText:
     'Please wait patiently while the system processes the transfer. Check our FAQ for status explanations. If the order is not completed within 20 minute, please contact us through our Telegram group:',
-  orderInfoService: 'https://t.me/swfcoin',
-  orderInfoService_tw: 'http://dexcs.miningtw.xyz',
+  orderInfoService: '',
   notInstallMetamask:
     'No provider was found, please use dApp browser or install {wallet}',
   notInstallTronLink:
@@ -269,13 +268,13 @@ export default {
   1001: 'Request api error, ErrorCode: {code}',
   1154: 'Insufficient liquidity',
   1159: 'Insufficient liquidity, please try reducing the exchange amount and initiating the exchange again',
-  50012: 'SWFT 0-gas Swap Service is not available yet',
-  50013: 'WFT 0-gas Swap Service does not currently support this token',
-  50014: 'SWFT 0-gas Swap Service exception, insufficient balance',
-  50015: 'SWFT 0-gas Swap Service exception, please contact customer service',
+  50012: ' 0-gas Swap Service is not available yet',
+  50013: ' 0-gas Swap Service does not currently support this token',
+  50014: ' 0-gas Swap Service exception, insufficient balance',
+  50015: ' 0-gas Swap Service exception, please contact customer service',
   50016:
-    'SWFT 0-gas Swap Service failed, coin balance is below the threshold of {min} - {max}',
-  50017: 'SWFT 0-gas Swap Service exception, signature verification failed',
+    ' 0-gas Swap Service failed, coin balance is below the threshold of {min} - {max}',
+  50017: ' 0-gas Swap Service exception, signature verification failed',
   50018: 'Gas exchange service is unavailable, address not activated',
 
   nogasswap:
@@ -283,7 +282,7 @@ export default {
   cancleSign: 'The user cancels the signature, please try again.',
   nogasSeviceFee: 'Gas-free token swap',
   usenogas:
-    'The 0-gas Swap service provided by SWFT Channel was used for this exchange.',
+    'The 0-gas Swap service provided by OmniBridge Channel was used for this exchange.',
   sxfee: 'Service Fee',
   chatBotWellcome:
     'Welcome to GPTbot, we will embark on a magical AI journey for you.',

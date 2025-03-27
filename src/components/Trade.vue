@@ -966,7 +966,7 @@ export default {
           });
       }
       // 深度问题 兑换提示
-      if (this.info.dex == "SWFT" && this.info.isDex == "Y") {
+      if (this.info.dex == "OmniBridge" && this.info.isDex == "Y") {
         return Dialog.confirm({
           message: this.$t("deepInfo"),
           messageAlign: "left",

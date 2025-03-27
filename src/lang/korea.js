@@ -65,8 +65,7 @@ export default {
   noRecod: '기록없음',
   orderInfoText:
     '환전에는 때로 시간이 조금 더 걸릴 수 있으니, 여유롭게 기다려주십시오. 20분 이상 걸리면 전화 그룹에서 고객 서비스에 문의하십시오:',
-  orderInfoService: 'https://t.me/swftswap_CN',
-  orderInfoService_tw: 'http://dexcs.miningtw.xyz',
+  orderInfoService: '',
   notInstallMetamask:
     '프로그램을 찾을 수 없습니다. dAp브라우저를 사용하거나 혹은  {wallet}을 설치하세요',
   notInstallTronLink:
@@ -277,7 +276,7 @@ export default {
   cancleSign: '사용자가 서명을 취소했습니다. 상환을 다시 시작하세요.',
   nogasSeviceFee: '0 Gas 교환 수수료',
   usenogas:
-    '이번 거래에서는 SWFT 채널의 0 Gas 수수료 교환 서비스를 이용하였습니다.',
+    '이번 거래에서는 OmniBridge 채널의 0 Gas 수수료 교환 서비스를 이용하였습니다.',
   chatBotWellcome:
     'GPTbot에 오신 것을 환영합니다. AI 인텔리전스의 마법 같은 여정을 안내합니다.',
   stopGenerating: '응답 중지',

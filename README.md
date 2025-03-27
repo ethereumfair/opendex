@@ -16,4 +16,9 @@ npm run serve
 npm run build
 ```
 
+### document
+```
+https://deployment-en.allchainbridge.com/
+```
+
 

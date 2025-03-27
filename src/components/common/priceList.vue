@@ -56,7 +56,7 @@
             v-for="(item, index) in priceList"
             :key="index"
           >
-            <div class="free-gas" v-if="item.dex == 'SWFT' && isFreeGas">
+            <div class="free-gas" v-if="item.dex == 'OmniBridge' && isFreeGas">
               <img class="sd" src="../../assets/img/sd1.svg" alt="">
               <div class="free-text">
               <span> {{ $t('nogasswap',{
@@ -72,7 +72,7 @@
                 <img
                   :src="
                     twFlag == 'miningtw' &&
-                    (item.dex == 'bridgers1' || item.dex == 'SWFT')
+                    (item.dex == 'bridgers1' || item.dex == 'OmniBridge')
                       ? 'https://images.swft.pro/dex/miningTW.png'
                       : item.logoUrl
                   "
@@ -86,7 +86,7 @@
                       : item.dex
                     : item.dex == 'bridgers1'
                     ? 'MiningTW Bridge'
-                    : item.dex == 'SWFT'
+                    : item.dex == 'OmniBridge'
                     ? 'MiningTW'
                     : item.dex
                 }}
@@ -271,7 +271,7 @@ export default {
     },
     // 判断是否满足无gas兑换
     async isCanGasFree(){
-        const swftData = this.priceList.filter( item => item.dex == 'SWFT')
+        const swftData = this.priceList.filter( item => item.dex == 'OmniBridge')
         if(swftData.length == 0){
           this.$store.commit('setIsFreeGas', false)
           return

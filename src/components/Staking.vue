@@ -185,7 +185,6 @@
                 </div>
            </div>
     </div>   
-    <Footer :text="false"/>
     <DialogStaking @stakingSuccess="stakingSuccess" @stakingFail="stakingFail" :stakingDialogStatus="stakingDialogStatus" @closetDialogStatus="closetDialogStatus" :stakingItem="stakingItem" :autoList="autoList"/>
     <DialogStakingWithdrawRecord :stakingWithdrawRecordStatus="stakingWithdrawRecordStatus" @closetDialogStatus="closetDialogStatus" :unlockItem="unlockItem"/>
     <Dialog
@@ -227,7 +226,6 @@
 
 <script>
 import Header from './Header.vue'
-const Footer = () => import('./Footer.vue')
 const DialogStaking = () => import('./DialogStaking.vue')
 const DialogStakingWithdrawRecord = () => import('./DialogStakingWithdrawRecord.vue')
 const MyprojectList = () => import('./MyprojectList.vue')
@@ -267,7 +265,6 @@ export default {
     },
     components:{
         Header,
-        Footer,
         DialogStaking,
         DialogStakingWithdrawRecord,
         Dialog,

@@ -3,14 +3,14 @@
     <div class="tab">
       <div class="activeDiv" :style="{ left: leftAtive }"></div>
       <span
-        :class="recordType == 'swft' ? 'active' : ''"
-        @click="changeRecordType('swft')"
+        :class="recordType == 'OmniBridge' ? 'active' : ''"
+        @click="changeRecordType('OmniBridge')"
         >{{
           twFlag == 'miningtw'
             ? 'SWAP'
             : twFlag == 'burndex'
             ? 'Stablex'
-            : 'SWFT'
+            : 'OmniBridge'
         }}</span
       >
       <span
@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     changeRecordType(val) {
-      if (val == 'swft') {
+      if (val == 'OmniBridge') {
         this.leftAtive = '1%'
       } else if (val == 'bridgers1') {
         this.leftAtive = '49%'

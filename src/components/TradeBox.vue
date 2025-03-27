@@ -49,15 +49,15 @@
       <div class="range" v-if="
           type === 'from' &&
           info &&
-          (info.dex === 'SWFT' || info.dex === 'bridgers1')
+          (info.dex === 'OmniBridge' || info.dex === 'bridgers1')
         ">
         {{ $t('range')
         }}{{
-          isFreeGas && info.dex === 'SWFT'
+          isFreeGas && info.dex === 'OmniBridge'
             ? info.noGasDepositMin
             : info.depositMin
         }}~{{
-          isFreeGas && info.dex === 'SWFT'
+          isFreeGas && info.dex === 'OmniBridge'
             ? info.noGasDepositMax
             : info.depositMax
         }}

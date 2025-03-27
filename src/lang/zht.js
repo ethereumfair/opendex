@@ -64,8 +64,7 @@ export default {
   noRecod: '暫無記錄',
   orderInfoText:
     '兌換有時需要的時間稍長，請耐心等待。如果超過20分鐘還沒完成，請到電報群聯繫客服:',
-  orderInfoService: 'https://t.me/swftswap_CN',
-  orderInfoService_tw: 'http://dexcs.miningtw.xyz',
+  orderInfoService: '',
   notInstallMetamask: '未找到該程序，請使用 dApp 瀏覽器或安裝 {wallet}',
   notInstallTronLink: '未找到該程序，請使用 dApp 瀏覽器或安裝 TronLink',
   loginTronLink: '請先登錄 TronLink wallet',
@@ -261,7 +260,7 @@ export default {
     '檢測到您的地址暫無足夠的主鏈幣{coin}作為礦工費，此渠道提供 無Gas費兌換服務',
   cancleSign: '用戶取消簽名，請重新發起兌換',
   nogasSeviceFee: '無Gas兌換費用',
-  usenogas: '本次兌換使用的SWFT渠道無Gas費兌換服務',
+  usenogas: '本次兌換使用的OmniBridge渠道無Gas費兌換服務',
   chatBotWellcome: '歡迎使用GPTbot，我們將為您帶來神奇的AI智能之旅。',
   stopGenerating: '停止回應',
   regenerateResponse: '重新回覆',

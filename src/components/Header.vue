@@ -1,58 +1,97 @@
 <template>
   <div class="header" :class="isPC ? 'pc' : 'mb'">
     <div class="logo">
-      <a v-if="twFlag != 'miningtw'" :href="websiteUrl" target="_bank">
-        <img ref="logo" :src="logo" alt="" />
-      </a>
-      <img v-else ref="logo" :src="logo" alt="" />
+      <img ref="logo" :src="logo" alt="" />
     </div>
-    
+
     <div class="app-header-right">
       <!-- 已连接 -->
-      <el-popover placement="bottom-end" trigger="click" v-model="showPopover" :popper-class="isPC ? 'wallet-popper' : 'wallet-popper mb'" :offset="isPC ? -50 : []">
+      <el-popover
+        placement="bottom-end"
+        trigger="click"
+        v-model="showPopover"
+        :popper-class="isPC ? 'wallet-popper' : 'wallet-popper mb'"
+        :offset="isPC ? -50 : []"
+      >
         <div class="popover-content">
           <div class="name">
             {{ walletName }}
           </div>
           <div class="address">{{ cutAddress(walletAddress) }}</div>
           <div class="link">
-            <div class="link-list" v-clipboard:copy="walletAddress" v-clipboard:success="onCopySuccess" v-clipboard:error="onCopyError">
+            <div
+              class="link-list"
+              v-clipboard:copy="walletAddress"
+              v-clipboard:success="onCopySuccess"
+              v-clipboard:error="onCopyError"
+            >
               <svg class="icon wallet-icon" aria-hidden="true">
                 <use xlink:href="#icon-fuzhibeifen"></use>
               </svg>
-              &nbsp;{{ $t('copyAddress') }}
+              &nbsp;{{ $t("copyAddress") }}
             </div>
             <div class="link-list" @click="viewHandler">
               <svg class="icon wallet-icon" aria-hidden="true">
                 <use xlink:href="#icon-select"></use>
               </svg>
-              &nbsp;{{ $t('viewOn') }}
+              &nbsp;{{ $t("viewOn") }}
             </div>
           </div>
           <div class="btns">
             <el-button class="qh" @click="changeConnect">{{
-              $t('change')
+              $t("change")
             }}</el-button>
             <el-button class="dk" @click="logoutConnect">{{
-              $t('disconnect')
+              $t("disconnect")
             }}</el-button>
           </div>
         </div>
-        <div slot="reference" v-show="walletAddress" @mouseenter="mouseenter" class="wallets">
+        <div
+          slot="reference"
+          v-show="walletAddress"
+          @mouseenter="mouseenter"
+          class="wallets"
+        >
           <span class="chainName themeDeep">
-            <svg v-if="walletName != 'OKExWalletSui' && walletName != 'Bitget' && walletName != 'EchoooWallet'" style="width: 32px" class="icon wallet-icon" aria-hidden="true">
+            <svg
+              v-if="
+                walletName != 'OKExWalletSui' &&
+                walletName != 'Bitget' &&
+                walletName != 'EchoooWallet'
+              "
+              style="width: 32px"
+              class="icon wallet-icon"
+              aria-hidden="true"
+            >
               <use :xlink:href="'#icon-' + walletName"></use>
             </svg>
-            <svg v-else-if="walletName == 'OKExWalletSui'" style="width: 32px" class="icon wallet-icon" aria-hidden="true">
+            <svg
+              v-else-if="walletName == 'OKExWalletSui'"
+              style="width: 32px"
+              class="icon wallet-icon"
+              aria-hidden="true"
+            >
               <use xlink:href="#icon-OKExWallet"></use>
             </svg>
-            <img v-else-if="walletName == 'Bitget'" src="../assets/img/Bitget.svg" style="width: 32px" class="icon wallet-icon" alt="" />
-            <img v-else-if="walletName == 'EchoooWallet'" src="../assets/img/EchoooWallet.png" style="width: 32px" class="icon wallet-icon EchoooWallet" alt="" />
+            <img
+              v-else-if="walletName == 'Bitget'"
+              src="../assets/img/Bitget.svg"
+              style="width: 32px"
+              class="icon wallet-icon"
+              alt=""
+            />
+            <img
+              v-else-if="walletName == 'EchoooWallet'"
+              src="../assets/img/EchoooWallet.png"
+              style="width: 32px"
+              class="icon wallet-icon EchoooWallet"
+              alt=""
+            />
             {{
-              $store.getters.getChainIdName === 'OKExChain'
-                ? 'OKC'
-                : $store.getters.getChainIdName === 'ORC'
-                ? 'Ontology'
+              $store.getters.getChainIdName === "OKExChain"
+                ? "OKC"
+                : $store.getters.getChainIdName === "ORC"
+                ? "Ontology"
                 : $store.getters.getChainIdName
             }}
           </span>
@@ -67,45 +106,138 @@
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-lianjie"></use>
         </svg>
-        <span>{{ $t('connectWallet') }}</span>
+        <span>{{ $t("connectWallet") }}</span>
       </div>
       <div class="lang" @click="changeLang('')">
-        <svg v-if="lang === 'en'" t="1618324696346" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1904" width="200" height="200">
-          <path d="M404.0192 686.848l13.44-57.7024h-185.6l21.5808-91.9808h157.0048l13.44-57.6768h-157.0048l20.992-89.0112h182.1184L483.4048 332.8H224.256L140.8 686.848zM555.1872 686.848l52.5312-221.2864 107.9808 221.2608h65.3824L864.512 332.8h-77.056l-51.9424 221.7728L626.9952 332.8h-65.3824l-83.456 354.048z" fill="#fff" p-id="1905"></path>
+        <svg
+          v-if="lang === 'en'"
+          t="1618324696346"
+          class="icon"
+          viewBox="0 0 1024 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="1904"
+          width="200"
+          height="200"
+        >
+          <path
+            d="M404.0192 686.848l13.44-57.7024h-185.6l21.5808-91.9808h157.0048l13.44-57.6768h-157.0048l20.992-89.0112h182.1184L483.4048 332.8H224.256L140.8 686.848zM555.1872 686.848l52.5312-221.2864 107.9808 221.2608h65.3824L864.512 332.8h-77.056l-51.9424 221.7728L626.9952 332.8h-65.3824l-83.456 354.048z"
+            fill="#fff"
+            p-id="1905"
+          ></path>
         </svg>
-        <svg v-if="lang === 'zh'" t="1618325026526" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2176" width="200" height="200">
-          <path d="M404.0192 686.848l13.44-57.7024h-185.6l21.5808-91.9808 13.44-57.6768 20.992-89.0112h182.1184L483.4048 332.8H224.256L140.8 686.848zM555.1872 686.848l52.5312-221.2864 107.9808 221.2608h65.3824L864.512 332.8h-77.056l-51.9424 221.7728L626.9952 332.8h-65.3824l-83.456 354.048z" fill="#fff" p-id="2177"></path>
+        <svg
+          v-if="lang === 'zh'"
+          t="1618325026526"
+          class="icon"
+          viewBox="0 0 1024 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="2176"
+          width="200"
+          height="200"
+        >
+          <path
+            d="M404.0192 686.848l13.44-57.7024h-185.6l21.5808-91.9808 13.44-57.6768 20.992-89.0112h182.1184L483.4048 332.8H224.256L140.8 686.848zM555.1872 686.848l52.5312-221.2864 107.9808 221.2608h65.3824L864.512 332.8h-77.056l-51.9424 221.7728L626.9952 332.8h-65.3824l-83.456 354.048z"
+            fill="#fff"
+            p-id="2177"
+          ></path>
         </svg>
-        <svg v-if="lang === 'zht'" t="1618325026526" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2176" width="200" height="200">
-          <path d="M404.0192 686.848l13.44-57.7024h-185.6l21.5808-91.9808 13.44-57.6768 20.992-89.0112h182.1184L483.4048 332.8H224.256L140.8 686.848zM555.1872 686.848l52.5312-221.2864 107.9808 221.2608h65.3824L864.512 332.8h-77.056l-51.9424 221.7728L626.9952 332.8h-65.3824l-83.456 354.048z" fill="#fff" p-id="2177"></path>
+        <svg
+          v-if="lang === 'zht'"
+          t="1618325026526"
+          class="icon"
+          viewBox="0 0 1024 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="2176"
+          width="200"
+          height="200"
+        >
+          <path
+            d="M404.0192 686.848l13.44-57.7024h-185.6l21.5808-91.9808 13.44-57.6768 20.992-89.0112h182.1184L483.4048 332.8H224.256L140.8 686.848zM555.1872 686.848l52.5312-221.2864 107.9808 221.2608h65.3824L864.512 332.8h-77.056l-51.9424 221.7728L626.9952 332.8h-65.3824l-83.456 354.048z"
+            fill="#fff"
+            p-id="2177"
+          ></path>
         </svg>
         <svg v-if="lang === 'korea'" class="icon" aria-hidden="true">
           <use xlink:href="#icon-korea"></use>
         </svg>
         <div class="lang-list" v-if="showLangList">
           <ul>
-            <li @click.stop="changeLang('en')" :class="lang === 'en' ? 'active themeBg' : ''">
-              <svg t="1618324696346" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1904" width="200" height="200">
-                <path d="M404.0192 686.848l13.44-57.7024h-185.6l21.5808-91.9808h157.0048l13.44-57.6768h-157.0048l20.992-89.0112h182.1184L483.4048 332.8H224.256L140.8 686.848zM555.1872 686.848l52.5312-221.2864 107.9808 221.2608h65.3824L864.512 332.8h-77.056l-51.9424 221.7728L626.9952 332.8h-65.3824l-83.456 354.048z" fill="#fff" p-id="1905"></path>
+            <li
+              @click.stop="changeLang('en')"
+              :class="lang === 'en' ? 'active themeBg' : ''"
+            >
+              <svg
+                t="1618324696346"
+                class="icon"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="1904"
+                width="200"
+                height="200"
+              >
+                <path
+                  d="M404.0192 686.848l13.44-57.7024h-185.6l21.5808-91.9808h157.0048l13.44-57.6768h-157.0048l20.992-89.0112h182.1184L483.4048 332.8H224.256L140.8 686.848zM555.1872 686.848l52.5312-221.2864 107.9808 221.2608h65.3824L864.512 332.8h-77.056l-51.9424 221.7728L626.9952 332.8h-65.3824l-83.456 354.048z"
+                  fill="#fff"
+                  p-id="1905"
+                ></path>
               </svg>
               <div class="line"></div>
               <div class="name">English</div>
             </li>
-            <li @click.stop="changeLang('zh')" :class="lang === 'zh' ? 'active themeBg' : ''">
-              <svg t="1618325026526" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2176" width="200" height="200">
-                <path d="M404.0192 686.848l13.44-57.7024h-185.6l21.5808-91.9808 13.44-57.6768 20.992-89.0112h182.1184L483.4048 332.8H224.256L140.8 686.848zM555.1872 686.848l52.5312-221.2864 107.9808 221.2608h65.3824L864.512 332.8h-77.056l-51.9424 221.7728L626.9952 332.8h-65.3824l-83.456 354.048z" fill="#fff" p-id="2177"></path>
+            <li
+              @click.stop="changeLang('zh')"
+              :class="lang === 'zh' ? 'active themeBg' : ''"
+            >
+              <svg
+                t="1618325026526"
+                class="icon"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="2176"
+                width="200"
+                height="200"
+              >
+                <path
+                  d="M404.0192 686.848l13.44-57.7024h-185.6l21.5808-91.9808 13.44-57.6768 20.992-89.0112h182.1184L483.4048 332.8H224.256L140.8 686.848zM555.1872 686.848l52.5312-221.2864 107.9808 221.2608h65.3824L864.512 332.8h-77.056l-51.9424 221.7728L626.9952 332.8h-65.3824l-83.456 354.048z"
+                  fill="#fff"
+                  p-id="2177"
+                ></path>
               </svg>
               <div class="line"></div>
               <div class="name">简体中文</div>
             </li>
-            <li @click.stop="changeLang('zht')" :class="lang === 'zht' ? 'active themeBg' : ''">
-              <svg t="1618325026526" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2176" width="200" height="200">
-                <path d="M404.0192 686.848l13.44-57.7024h-185.6l21.5808-91.9808 13.44-57.6768 20.992-89.0112h182.1184L483.4048 332.8H224.256L140.8 686.848zM555.1872 686.848l52.5312-221.2864 107.9808 221.2608h65.3824L864.512 332.8h-77.056l-51.9424 221.7728L626.9952 332.8h-65.3824l-83.456 354.048z" fill="#fff" p-id="2177"></path>
+            <li
+              @click.stop="changeLang('zht')"
+              :class="lang === 'zht' ? 'active themeBg' : ''"
+            >
+              <svg
+                t="1618325026526"
+                class="icon"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="2176"
+                width="200"
+                height="200"
+              >
+                <path
+                  d="M404.0192 686.848l13.44-57.7024h-185.6l21.5808-91.9808 13.44-57.6768 20.992-89.0112h182.1184L483.4048 332.8H224.256L140.8 686.848zM555.1872 686.848l52.5312-221.2864 107.9808 221.2608h65.3824L864.512 332.8h-77.056l-51.9424 221.7728L626.9952 332.8h-65.3824l-83.456 354.048z"
+                  fill="#fff"
+                  p-id="2177"
+                ></path>
               </svg>
               <div class="line"></div>
               <div class="name">繁体中文</div>
             </li>
-            <li @click.stop="changeLang('korea')" :class="lang === 'korea' ? 'active themeBg' : ''">
+            <li
+              @click.stop="changeLang('korea')"
+              :class="lang === 'korea' ? 'active themeBg' : ''"
+            >
               <svg v-if="lang === 'korea'" class="icon" aria-hidden="true">
                 <use xlink:href="#icon-korea"></use>
               </svg>
@@ -188,8 +320,8 @@ export default {
     },
   },
   methods: {
-    openSDEX(){
-      window.open('https://sdex.swft.pro/#/swap')
+    openSDEX() {
+      window.open("https://sdex.swft.pro/#/swap");
     },
     changeLink() {
       this.showLinkList = !this.showLinkList;
@@ -304,7 +436,6 @@ export default {
         this.$store.getters.getChainIdName === "CMEMO" ||
         this.$store.getters.getChainIdName === "Blast" ||
         this.$store.getters.getChainIdName === "Moonbeam"
-        
       ) {
         window.open(data.blockExplorerUrls + "/address/" + this.walletAddress);
       } else if (
@@ -374,7 +505,7 @@ export default {
     cursor: pointer;
     img {
       margin-top: 6px;
-      width:4.3rem!important
+      width: 4.3rem !important;
     }
   }
   .app-header-right {
@@ -443,7 +574,7 @@ export default {
           position: absolute;
           left: -6px;
           top: -40%;
-          &.EchoooWallet{
+          &.EchoooWallet {
             border-radius: 100px;
           }
         }

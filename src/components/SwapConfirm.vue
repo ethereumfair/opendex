@@ -8,7 +8,7 @@
       @open="openOrderDilog"
     >
       <div class="centerDiv">
-        <div class="free-gas" v-if="info && info.dex == 'SWFT' && isFreeGas">
+        <div class="free-gas" v-if="info && info.dex == 'OmniBridge' && isFreeGas">
           <div class="free-text">
             <img class="sd" src="../assets/img/sd1.svg" alt="" />
             <span> {{ $t("usenogas") }}</span>
@@ -85,7 +85,7 @@
                 <img
                   :src="
                     twFlag == 'miningtw' &&
-                    (info.dex == 'bridgers1' || info.dex == 'SWFT')
+                    (info.dex == 'bridgers1' || info.dex == 'OmniBridge')
                       ? 'https://images.swft.pro/dex/miningTW.png'
                       : info.logoUrl
                   "
@@ -98,7 +98,7 @@
                         : info.dex
                       : info.dex == "bridgers1"
                       ? "MiningTW Bridge"
-                      : info.dex == "SWFT"
+                      : info.dex == "OmniBridge"
                       ? "MiningTW"
                       : info.dex
                   }}
@@ -119,7 +119,7 @@
             <div class="left">
               {{
                 info &&
-                info.dex !== "SWFT" &&
+                info.dex !== "OmniBridge" &&
                 info.dex !== "bridgers1" &&
                 info.dex !== "Aggregator" &&
                 info.dex !== "bridgers2"
@@ -140,7 +140,7 @@
                 :offset="[-10, 8]"
                 :get-container="getContainer"
               >
-                <div class="tip-content" v-if="info && info.dex === 'SWFT'">
+                <div class="tip-content" v-if="info && info.dex === 'OmniBridge'">
                   {{ $t("feeTip") }}
                 </div>
                 <div
@@ -158,7 +158,7 @@
                   class="tip-content"
                   v-if="
                     info &&
-                    info.dex !== 'SWFT' &&
+                    info.dex !== 'OmniBridge' &&
                     info.dex !== 'bridgers1' &&
                     info.dex !== 'Aggregator' &&
                     info.dex !== 'bridgers2'
@@ -172,7 +172,7 @@
               <span v-if="info">
                 <span
                   v-if="
-                    info.dex === 'SWFT' ||
+                    info.dex === 'OmniBridge' ||
                     info.dex === 'bridgers1' ||
                     info.dex === 'Aggregator' ||
                     info.dex === 'bridgers2'
@@ -192,7 +192,7 @@
                     sourceFlag === "kfi"
                       ? ""
                       : sendGas
-                      ? (info.dex === "SWFT" ? " + " : "") +
+                      ? (info.dex === "OmniBridge" ? " + " : "") +
                         sendGas[0] +
                         " " +
                         sendGas[1]
@@ -204,7 +204,7 @@
           </div>
           <div
             class="rate"
-            v-if="info && info.dex === 'SWFT' && info.burnRate != 0"
+            v-if="info && info.dex === 'OmniBridge' && info.burnRate != 0"
           >
             <div class="left">{{ $t("burnRate") }}</div>
             <div class="right">
@@ -275,14 +275,12 @@
     </Dialog>
     <xummDialog ref="qrcode" />
     <Approve ref="approve" @approve="approve" />
-    <InterceptDialog ref="InterceptDialog" :interceptData="interceptData" />
   </div>
 </template>
 <script>
 const Dialog = () => import("./common/dialog");
 
 const Approve = () => import("./Approve");
-const InterceptDialog = () => import("../components/InterceptDialog");
 
 import baseApi from "../api/baseApi";
 import { ethers } from "ethers";
@@ -327,7 +325,6 @@ export default {
     Popover,
     Approve,
     xummDialog,
-    InterceptDialog,
   },
   props: {
     sendGas: { type: Array, default: null },
@@ -524,59 +521,7 @@ export default {
     },
     async exchange() {
       this.submitStatus = true;
-      // const checkFromAddress = this.walletAddress;
-      // const checkToAddress = this.$store.state.address;
-      // //同链同地址，请求一次
-      // if (
-      //   this.fromToken.mainNetwork == this.toToken.mainNetwork &&
-      //   checkFromAddress == checkToAddress
-      // ) {
-      //   const balckListCheck = await baseApi.queryBlackList({
-      //     content: checkFromAddress, 
-      //     coinCode: this.fromToken.coinCode,
-      //   });
-      //   if (
-      //     balckListCheck.resCode == "800" &&
-      //     balckListCheck.data.score == "0"
-      //   ) {
-      //     this.interceptData = {
-      //       address: checkFromAddress,
-      //       mainNetwork: this.fromToken.mainNetwork,
-      //     };
-      //     this.$refs.InterceptDialog.$refs.dialog.show = true;
-      //     return;
-      //   }
-      // } else {
-      //   const balckListCheck1 = await baseApi.queryBlackList({
-      //     content: checkFromAddress, 
-      //     coinCode: this.fromToken.coinCode,
-      //   });
-      //   const balckListCheck2 = await baseApi.queryBlackList({
-      //     content: checkToAddress, 
-      //     coinCode: this.toToken.coinCode,
-      //   });
-      //   if (
-      //     (balckListCheck1.resCode == "800" &&
-      //       balckListCheck1.data.score == "0") ||
-      //     (balckListCheck2.resCode == "800" &&
-      //       balckListCheck2.data.score == "0")
-      //   ) {
-      //     if (balckListCheck1.data.score == "0") {
-      //       this.interceptData = {
-      //         address: checkFromAddress,
-      //         mainNetwork: this.fromToken.mainNetwork,
-      //       };
-      //     } else {
-      //       this.interceptData = {
-      //         address: checkToAddress,
-      //         mainNetwork: this.toToken.mainNetwork,
-      //       };
-      //     }
-      //     this.$refs.InterceptDialog.$refs.dialog.show = true;
-      //     return;
-      //   }
-      // }
-      if (this.info.dex !== "SWFT") {
+      if (this.info.dex !== "OmniBridge") {
         this.submitStatus = true;
         pathBridgeMethods.pathBridgeExchange(this);
         return;
@@ -628,7 +573,7 @@ export default {
             const isWalletConnect = this.$store.state.isWalletConnect;
 
             // 判断无gas 兑换服务
-            if (this.info.dex == "SWFT" && this.isFreeGas) {
+            if (this.info.dex == "OmniBridge" && this.isFreeGas) {
               let mainNetwork = null;
               if (this.connectType === "OKExWallet") {
                 mainNetwork = okexchain;

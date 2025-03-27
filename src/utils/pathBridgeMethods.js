@@ -541,7 +541,7 @@ async function exchange(response) {
         addsSwapTransData(hashResult, response.data.txData.orderId)
       } else {
         scope.submitStatus = false
-        scope.dex = 'SWFT'
+        scope.dex = 'OmniBridge'
         addTransData(result)
       }
     } catch (error) {
@@ -693,7 +693,7 @@ async function exchange(response) {
       } else if (scope.connectType == 'SafePal(SOL)') {
         let { signature } = await window.safepal.signAndSendTransaction(anyTransaction);
         scope.submitStatus = false
-        scope.dex = 'SWFT'
+        scope.dex = 'OmniBridge'
         addsSwapTransData({ hash: signature })
       }
     } catch (err) {
@@ -750,7 +750,7 @@ async function exchange(response) {
         payload,
       )
       scope.submitStatus = false
-      scope.dex = 'SWFT'
+      scope.dex = 'OmniBridge'
       addsSwapTransData({ hash: transactionRes.hash })
       //store.commit('setFromNumber', '')
     } catch (err) {
@@ -908,7 +908,7 @@ async function exchange(response) {
         //store.commit('setFromNumber', '')
       } else {
         scope.submitStatus = false
-        scope.dex = 'SWFT'
+        scope.dex = 'OmniBridge'
         addTransData(res.hash)
         //store.commit('setFromNumber', '')
         //store.commit('setAddress', '')

@@ -14,7 +14,7 @@ function showWindowHref() {
 }
 let sourceFlag = showWindowHref()['sourceFlag']
 if (sourceFlag === undefined || sourceFlag === '' || sourceFlag === null) {
-  localStorage.setItem('sourceFlag', 'widget')
+  localStorage.setItem('sourceFlag', 'opendex')
   localStorage.setItem('bridgersFlag', '')
 } else {
   const urlStr = window.location.href
@@ -31,7 +31,7 @@ if (sourceFlag === undefined || sourceFlag === '' || sourceFlag === null) {
 }
 let actionCode = showWindowHref()['actionCode']
 if (actionCode === undefined || actionCode === '' || actionCode === null) {
-  localStorage.setItem('actionCode', 'widget')
+  localStorage.setItem('actionCode', 'opendex')
 } else {
   localStorage.setItem(
     'actionCode',

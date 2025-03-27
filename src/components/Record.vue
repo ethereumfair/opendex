@@ -229,7 +229,7 @@ export default {
         pageSize: 5,
         fromAddress: this.walletAddress,
       }
-      if (this.recordType === 'swft') {
+      if (this.recordType === 'OmniBridge') {
         const res = await baseApi.queryAllTrade(params)
         if (res && res.resCode == 800) {
           if (this.walletAddress !== '') {
@@ -681,7 +681,7 @@ export default {
     if (this.bridgersFlag == 'bridgers') {
       this.recordType = 'bridgers1'
     } else {
-      this.recordType = 'swft'
+      this.recordType = 'OmniBridge'
     }
     this.$bus.on('queryAllTradeHandle', this.queryAllTrade)
     if (
