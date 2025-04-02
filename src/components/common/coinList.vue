@@ -1861,7 +1861,7 @@ input::placeholder {
         }
         &.active {
           background: rgba(39, 127, 250, 0.05) !important;
-          border: 1px solid #277ffa;
+          border: 1px solid #0A4F93;
         }
         &.defultList {
           color: #9ea0a5;
@@ -2025,7 +2025,7 @@ input::placeholder {
         }
         &.active {
           background: rgba(39, 127, 250, 0.05) !important;
-          border: 1px solid #277ffa;
+          border: 1px solid #0A4F93;
         }
         &.notSupport {
           // color: #b8bfcf;

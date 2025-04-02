@@ -2,7 +2,6 @@
   <div class="home">
     <div v-if="isServe" class="container">
       <Header />
-      <HeaderInfo />
       <div class="home-cont" v-if="showTradeBox">
         <div class="home-cont-trade" :class="isPC ? 'pc' : ''">
           <Tab />
@@ -42,7 +41,6 @@ const Tab = () => import("./Tab");
 const NoServePage = () => import("./NoServePage");
 import Header from "./Header";
 import Trade from "./Trade";
-import HeaderInfo from "./HeaderInfo";
 import baseApi from "../api/baseApi";
 
 export default {
@@ -53,7 +51,6 @@ export default {
     Record,
     Records,
     Order,
-    HeaderInfo,
     AdvertiseAlert,
     Tab,
     NoServePage,
@@ -361,7 +358,7 @@ export default {
     cursor: pointer;
     margin: 0 0.09rem;
     background: #ffffff;
-    border: 1px solid #277ffa;
+    border: 1px solid #0A4F93;
     &:hover {
       .service-text {
         display: block;
@@ -370,7 +367,7 @@ export default {
     .service-text {
       flex: 1;
       text-align: center;
-      color: #277ffa;
+      color: #0A4F93;
       font-size: 0.28rem;
       font-weight: bold;
       display: none;
@@ -382,7 +379,7 @@ export default {
     }
   }
   .defaultBg {
-    background: #277ffa;
+    background: #0A4F93;
   }
 }
 .home {

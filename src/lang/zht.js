@@ -85,9 +85,9 @@ export default {
   change: '切換',
   disconnect: '斷開',
   noChangeNetwork:
-    'walletConnect暫不支持切換。請在錢包內/AllChain Swap斷開連接並在錢包內切換至{network}鏈，重新掃描walletConnect進行連接。 ',
+    'walletConnect暫不支持切換。請在錢包內/Opendex Swap斷開連接並在錢包內切換至{network}鏈，重新掃描walletConnect進行連接。 ',
   mbnoChangeNetwork:
-    'walletConnect暫不支持切換。請在AllChain Swap斷開連接後重新連接walletConnect並選擇{network}鏈。 ',
+    'walletConnect暫不支持切換。請在Opendex Swap斷開連接後重新連接walletConnect並選擇{network}鏈。 ',
   noUseNetwork: 'walletConnect暫不支持此鏈進行兌換，請切換至其他渠道。 ',
   useTronLink: '請點擊TronLink連接',
   useDot: '請點擊polkadot{.js}連接',

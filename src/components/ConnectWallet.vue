@@ -191,7 +191,7 @@ export default {
         //     message: this.$t('useTronLink'),
         //     theme: 'round-button',
         //     messageAlign: 'left',
-        //     confirmButtonColor: '#277ffa',
+        //     confirmButtonColor: '#0A4F93',
         //     className: 'noChangeNetwork',
         //   })
         //   return
@@ -215,7 +215,7 @@ export default {
               message: this.$t("useDot"),
               theme: "round-button",
               messageAlign: "left",
-              confirmButtonColor: "#277ffa",
+              confirmButtonColor: "#0A4F93",
               className: "noChangeNetwork",
             });
           }
@@ -226,7 +226,7 @@ export default {
             message: this.$t("usePhantom"),
             theme: "round-button",
             messageAlign: "left",
-            confirmButtonColor: "#277ffa",
+            confirmButtonColor: "#0A4F93",
             className: "noChangeNetwork",
           });
 

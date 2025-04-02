@@ -88,9 +88,9 @@ export default {
   change: 'Change',
   disconnect: 'Disconnect',
   noChangeNetwork:
-    'Sorry, shifting chain is currently not supported on walletConnect. Please disconnect from wallet/AllChain Swap and then select {network} chain in the wallet, rescan walletConnect to connect again.',
+    'Sorry, shifting chain is currently not supported on walletConnect. Please disconnect from wallet/Opendex Swap and then select {network} chain in the wallet, rescan walletConnect to connect again.',
   mbnoChangeNetwork:
-    'Sorry, shifting chain is currently not supported on walletConnect. Please disconnect from AllChain Swap and reconnect with walletConnect and then select {network} chain.',
+    'Sorry, shifting chain is currently not supported on walletConnect. Please disconnect from Opendex Swap and reconnect with walletConnect and then select {network} chain.',
   noUseNetwork:
     'This chain is currenly unsupported on walletConnect, please change to another swapping channel.',
   useTronLink: 'Please use TronLink to connect.',

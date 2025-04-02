@@ -89,9 +89,9 @@ export default {
   change: '전환',
   disconnect: '연결해제',
   noChangeNetwork:
-    'walletConnect는 전환을 지원하지 않습니다. 지갑/AllChain Swap에서 연결을 끊고 지갑에서 {network} 체인으로 전환한 후 walletConnect를 다시 스캔하여 연결하십시오.',
+    'walletConnect는 전환을 지원하지 않습니다. 지갑/Opendex Swap에서 연결을 끊고 지갑에서 {network} 체인으로 전환한 후 walletConnect를 다시 스캔하여 연결하십시오.',
   mbnoChangeNetwork:
-    'walletConnect는 전환을 지원하지 않습니다. 지갑/AllChain Swap에서 연결을 끊고  walletConnect를 다시 연결 후 {network}체인 선택하세요.',
+    'walletConnect는 전환을 지원하지 않습니다. 지갑/Opendex Swap에서 연결을 끊고  walletConnect를 다시 연결 후 {network}체인 선택하세요.',
   noUseNetwork:
     'walletConnect는전환을 지원하지 않습니다,다른 루트로 전환하세요',
   useTronLink: 'TronLink연결',

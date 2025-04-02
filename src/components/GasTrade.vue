@@ -604,7 +604,7 @@ export default {
           width: 1rem;
           height: 0.4rem;
           line-height: 0.4rem;
-          background: #277ffa;
+          background: #0A4F93;
           border-radius: 0.12rem;
           text-align: center;
           color: #ffffff;

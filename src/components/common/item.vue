@@ -148,7 +148,7 @@ export default {
         Dialog.confirm({
           message: this.$t("sendBRC20"),
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           confirmButtonText: this.$t("ConfirmNFT"),
           cancelButtonText: this.$t("btnCancel"),
         })

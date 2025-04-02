@@ -733,7 +733,7 @@ export default {
       font-size: 0.296rem;
       font-family: Poppins-Regular, Poppins;
       font-weight: 400;
-      color: #3184fa;
+      color: #0A4F93;
       cursor: pointer;
       position: absolute;
       right: 0;

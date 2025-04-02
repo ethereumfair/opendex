@@ -419,7 +419,7 @@ export default {
     overflow: hidden;
     .free-gas{
       width: 100%;
-      background: #277FFA;
+      background: #0A4F93;
       opacity: 1;
       padding: 0 .1rem 0 .2rem;
       display: flex;
@@ -498,17 +498,17 @@ export default {
           margin-left: 3px;
         }
         .fast {
-          color: #277ffa;
+          color: #0A4F93;
           background-color: #f3f8ff;
-          border: 1px solid #277ffa;
+          border: 1px solid #0A4F93;
           border-radius: 5px;
           padding: 2px 3px;
           margin-left: 3px;
         }
         .maxTo {
-          color: #277ffa;
+          color: #0A4F93;
           background-color: #f3f8ff;
-          border: 1px solid #277ffa;
+          border: 1px solid #0A4F93;
           border-radius: 5px;
           padding: 2px 3px;
           margin-left: 3px;

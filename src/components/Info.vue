@@ -1151,7 +1151,7 @@ export default {
       }
     }
     .morePriceText {
-      color: #277ffa;
+      color: #0A4F93;
       background: #f3f8ff;
       border-radius: 10px;
       padding: 1px 5px;
@@ -1205,14 +1205,14 @@ export default {
     box-sizing: border-box;
     cursor: pointer;
     margin-bottom: 0.2rem;
-    border: 1px solid #277ffa;
+    border: 1px solid #0A4F93;
     border-radius: 0.25rem;
     background-color: #f3f8ff;
     font-family: Poppins-Regular;
     overflow: hidden;
     .free-gas {
       width: 100%;
-      background: #277ffa;
+      background: #0A4F93;
       opacity: 1;
       padding: 0 0.1rem 0 0.2rem;
       display: flex;
@@ -1295,17 +1295,17 @@ export default {
           margin-left: 3px;
         }
         .fast {
-          color: #277ffa;
+          color: #0A4F93;
           background-color: #f3f8ff;
-          border: 1px solid #277ffa;
+          border: 1px solid #0A4F93;
           border-radius: 5px;
           padding: 2px 3px;
           margin-left: 3px;
         }
         .maxTo {
-          color: #277ffa;
+          color: #0A4F93;
           background-color: #f3f8ff;
-          border: 1px solid #277ffa;
+          border: 1px solid #0A4F93;
           border-radius: 5px;
           padding: 2px 3px;
           margin-left: 3px;
@@ -1417,7 +1417,7 @@ export default {
         }
         .no-order-text {
           font-weight: 600;
-          color: #277ffa;
+          color: #0A4F93;
         }
       }
     }

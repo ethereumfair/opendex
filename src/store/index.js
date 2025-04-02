@@ -188,7 +188,7 @@ export default new Vuex.Store({
         ],
         events: ['chainChanged', 'accountsChanged'],
         metadata: {
-          name: 'ALLChain Bridge',
+          name: 'Opendex Bridge',
           description:
             'One-stop cross-chain platform: Cross-chain swap Aggregator, Cross-chain Bridge, DEX for BTC, ETH, BSC, TRON, XRPL, SOL, etc.',
           url: 'https://defi.swft.pro/#/',
@@ -219,7 +219,7 @@ export default new Vuex.Store({
         ],
         events: ['chainChanged', 'accountsChanged'],
         metadata: {
-          name: 'ALLChain Bridge',
+          name: 'Opendex Bridge',
           description:
             'One-stop cross-chain platform: Cross-chain swap Aggregator, Cross-chain Bridge, DEX for BTC, ETH, BSC, TRON, XRPL, SOL, etc.',
           url: 'https://defi.swft.pro/#/',

@@ -3281,7 +3281,7 @@ export default {
       }
       button {
         width: 100%;
-        background: #277ffa;
+        background: #0A4F93;
         border-radius: 18px;
         font-size: 18px;
         cursor: pointer;

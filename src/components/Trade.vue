@@ -10,7 +10,7 @@
         <svg t="1623380158754" :class="isPC ? 'icon' : 'iconM'" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1319" width="200" height="200" @click="exchangeTokens">
           <path d="M955.574857 505.947429c-1.993143 145.627429-27.282286 266.203429-101.229714 338.102857-71.917714 73.947429-192.493714 99.236571-338.102857 101.229714-145.627429-1.993143-266.203429-27.282286-338.121143-101.229714-73.947429-71.899429-99.236571-192.475429-101.229714-338.102857 2.011429-145.627429 27.282286-266.203429 101.229714-338.102858 71.917714-73.947429 192.493714-99.254857 338.102857-101.248 145.627429 2.011429 266.203429 27.300571 338.121143 101.229715 73.947429 71.917714 99.236571 192.493714 101.229714 338.121143z" fill="#F8FBFF" p-id="1320"></path>
           <path d="M438.528 358.089143v-82.779429s0.237714-4.352-8.301714-6.4c-7.021714-1.554286-13.805714 3.328-13.805715 3.328-3.017143 2.304-142.884571 103.533714-142.884571 103.533715s-13.293714 6.930286-13.293714 20.772571c0 13.330286 9.526857 18.962286 9.526857 18.962286l143.634286 100.717714s9.051429 3.346286 16.822857 1.810286c8.301714-1.810286 8.301714-7.954286 8.301714-7.954286v-77.659429h139.849143s110.244571 15.122286 110.244571 56.905143c0 0-1.755429-131.236571-113.737143-131.236571h-136.356571z" fill="#000000" p-id="1321"></path>
-          <path d="M581.394286 691.547429v82.779428s1.517714 5.12 10.550857 6.144c6.034286 0.768 9.801143-2.304 11.044571-3.328 3.017143-2.048 143.140571-103.533714 143.140572-103.533714s13.312-6.930286 13.312-20.772572c0-13.586286-9.545143-18.962286-9.545143-18.962285l-143.890286-100.717715s-6.034286-3.602286-14.061714-1.554285c-10.057143 2.56-10.550857 7.954286-10.550857 7.954285v77.403429h-140.617143s-110.226286-15.122286-110.226286-56.905143c0 0 1.755429 131.236571 113.993143 131.236572l136.850286 0.256z" fill="#277FFA" p-id="1322"></path>
+          <path d="M581.394286 691.547429v82.779428s1.517714 5.12 10.550857 6.144c6.034286 0.768 9.801143-2.304 11.044571-3.328 3.017143-2.048 143.140571-103.533714 143.140572-103.533714s13.312-6.930286 13.312-20.772572c0-13.586286-9.545143-18.962286-9.545143-18.962285l-143.890286-100.717715s-6.034286-3.602286-14.061714-1.554285c-10.057143 2.56-10.550857 7.954286-10.550857 7.954285v77.403429h-140.617143s-110.226286-15.122286-110.226286-56.905143c0 0 1.755429 131.236571 113.993143 131.236572l136.850286 0.256z" fill="#0A4F93" p-id="1322"></path>
         </svg>
         <TradeBox style="width: calc(50% - 18px)" ref="toToken" type="to" />
       </div>
@@ -864,7 +864,7 @@ export default {
         return Dialog.confirm({
           message: this.$t("solTip"),
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           confirmButtonText: this.$t("btnContinue"),
           cancelButtonText: this.$t("btnCancel"),
         })
@@ -885,7 +885,7 @@ export default {
         return Dialog.confirm({
           message: this.$t("cubeTip"),
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           confirmButtonText: this.$t("btnContinue"),
           cancelButtonText: this.$t("btnCancel"),
         })
@@ -907,7 +907,7 @@ export default {
         return Dialog.confirm({
           message: this.$t("ETCTip"),
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           confirmButtonText: this.$t("btnContinue"),
           cancelButtonText: this.$t("btnCancel"),
         })
@@ -929,7 +929,7 @@ export default {
         return Dialog.confirm({
           message: this.$t("ETHFTip"),
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           confirmButtonText: this.$t("btnContinue"),
           cancelButtonText: this.$t("btnCancel"),
         })
@@ -951,7 +951,7 @@ export default {
         return Dialog.confirm({
           message: this.$t("deepInfo"),
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           confirmButtonText: this.$t("btnContinue"),
           cancelButtonText: this.$t("btnCancel"),
         })
@@ -970,7 +970,7 @@ export default {
         return Dialog.confirm({
           message: this.$t("deepInfo"),
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           confirmButtonText: this.$t("btnContinue"),
           cancelButtonText: this.$t("btnCancel"),
         })
@@ -992,7 +992,7 @@ export default {
         return Dialog.confirm({
           message: this.$t("ETHWTip"),
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           confirmButtonText: this.$t("btnContinue"),
           cancelButtonText: this.$t("btnCancel"),
         })
@@ -1018,7 +1018,7 @@ export default {
         return Dialog.confirm({
           message: this.$t("deepInfo"),
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           confirmButtonText: this.$t("btnContinue"),
           cancelButtonText: this.$t("btnCancel"),
         })
@@ -1051,7 +1051,7 @@ export default {
             num: gas,
           }),
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           confirmButtonText: this.$t("btnContinue"),
           cancelButtonText: this.$t("btnCancel"),
         })
@@ -1092,7 +1092,7 @@ export default {
           message: this.$t("noUseNetwork"),
           theme: "round-button",
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           className: "noChangeNetwork",
         });
         return;
@@ -1112,7 +1112,7 @@ export default {
             message: this.$t("wcWalletNotchain", { chain: val.netWork }),
             theme: "round-button",
             messageAlign: "left",
-            confirmButtonColor: "#277ffa",
+            confirmButtonColor: "#0A4F93",
             className: "noChangeNetwork",
           });
         }
@@ -1137,7 +1137,7 @@ export default {
           }),
           theme: "round-button",
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           className: "noChangeNetwork",
         });
         return;
@@ -1153,7 +1153,7 @@ export default {
           }),
           theme: "round-button",
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           className: "noChangeNetwork",
         });
         return;
@@ -1172,7 +1172,7 @@ export default {
           }),
           theme: "round-button",
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           className: "noChangeNetwork",
         });
         return;
@@ -1189,7 +1189,7 @@ export default {
           }),
           theme: "round-button",
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           className: "noChangeNetwork",
         });
         return;
@@ -1204,7 +1204,7 @@ export default {
           }),
           theme: "round-button",
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           className: "noChangeNetwork",
         });
         return;
@@ -1221,7 +1221,7 @@ export default {
           }),
           theme: "round-button",
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           className: "noChangeNetwork",
         });
         return;
@@ -1236,7 +1236,7 @@ export default {
           }),
           theme: "round-button",
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           className: "noChangeNetwork",
         });
         return;
@@ -1253,7 +1253,7 @@ export default {
           }),
           theme: "round-button",
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           className: "noChangeNetwork",
         });
         return;
@@ -1268,7 +1268,7 @@ export default {
           }),
           theme: "round-button",
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           className: "noChangeNetwork",
         });
         return;
@@ -1291,7 +1291,7 @@ export default {
           }),
           theme: "round-button",
           messageAlign: "left",
-          confirmButtonColor: "#277ffa",
+          confirmButtonColor: "#0A4F93",
           className: "noChangeNetwork",
         });
         return;
@@ -1342,7 +1342,7 @@ export default {
             }),
             theme: "round-button",
             messageAlign: "left",
-            confirmButtonColor: "#277ffa",
+            confirmButtonColor: "#0A4F93",
             className: "noChangeNetwork",
           });
         }
@@ -1429,7 +1429,7 @@ export default {
                         }),
                         theme: "round-button",
                         messageAlign: "left",
-                        confirmButtonColor: "#277ffa",
+                        confirmButtonColor: "#0A4F93",
                         className: "noChangeNetwork",
                       });
                       return;

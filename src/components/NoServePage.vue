@@ -2,21 +2,12 @@
   <div>
     <div class="noServe" :style="{ width: isPC ? '700px' : '90%' }">
       <img src="../assets/img/noServe.png" alt="" />
-      <div v-if="sourceFlag == 'burndex'">
+      <div >
         <p v-if="lang == 'zh'">
-          stablex AllChain 对您当前所在的国家/地区不提供服务
+          Opendex 对您当前所在的国家/地区不提供服务
         </p>
         <p v-else>
-          stablex AllChain services are currently unavailable in your
-          country/area.
-        </p>
-      </div>
-      <div v-else>
-        <p v-if="lang == 'zh'">
-          AllChain 对您当前所在的国家/地区不提供服务
-        </p>
-        <p v-else>
-          AllChain services are currently unavailable in your country/area.
+          Opendex services are currently unavailable in your country/area.
         </p>
       </div>
     </div>

@@ -128,7 +128,7 @@ const pathBridgeExchange = async function ($scope) {
       }),
       theme: 'round-button',
       messageAlign: 'left',
-      confirmButtonColor: '#277FFA',
+      confirmButtonColor: '#0A4F93',
     })
   }
   //o3拦截手续费是否充足

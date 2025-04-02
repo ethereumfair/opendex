@@ -114,14 +114,14 @@ export default {
     font-size: 14px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
-    color: #277FFA;
+    color: #0A4F93;
     line-height: 15px;
   }
   .jumpBtn {
       margin: 0px auto;
       margin-top: 15px;
       width: 3.2rem;
-      background: #277ffa;
+      background: #0A4F93;
       border-radius: 8px;
       cursor: pointer;
       height: 100%;
@@ -142,7 +142,7 @@ export default {
       float: left;
       margin-left: 0px;
       width: 2.5rem;
-      background: #277ffa;
+      background: #0A4F93;
       border-radius: 8px;
       cursor: pointer;
       height: 100%;
@@ -157,7 +157,7 @@ export default {
     .copyBtn {
       float: right;
       width: 2.5rem;
-      background: #277ffa;
+      background: #0A4F93;
       border-radius: 8px;
       cursor: pointer;
       height: 100%;

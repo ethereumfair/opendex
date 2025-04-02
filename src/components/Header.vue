@@ -1,9 +1,8 @@
 <template>
   <div class="header" :class="isPC ? 'pc' : 'mb'">
     <div class="logo">
-      <img ref="logo" :src="logo" alt="" />
+      <img ref="logo" src="../assets/img/logo.png" alt="" />
     </div>
-
     <div class="app-header-right">
       <!-- 已连接 -->
       <el-popover
@@ -258,8 +257,6 @@
   </div>
 </template>
 <script>
-// import ConnectWallet from './ConnectWallet.vue'
-import logoImg from "../config/logoImg";
 import { Toast } from "vant";
 import { supportNetWork } from "../config/index";
 const ConnectWallet = () => import("./ConnectWallet.vue");
@@ -272,14 +269,12 @@ export default {
       showLangList: false,
       showLinkList: false,
       showMetamask: false,
-      logo: "", //网站logo
       showPopover: false,
       websiteUrl: "https://www.swft.pro/",
       twFlag: localStorage.getItem("twFlag"),
     };
   },
   mounted() {
-    this.logo = logoImg["allchain"].logo;
   },
   computed: {
     walletName() {
@@ -505,7 +500,7 @@ export default {
     cursor: pointer;
     img {
       margin-top: 6px;
-      width: 4.3rem !important;
+      width: 3rem !important;
     }
   }
   .app-header-right {
@@ -531,7 +526,7 @@ export default {
         word-break: keep-all;
         background: #fffbfc;
         border-radius: 13px;
-        border: 1px solid #277ffa;
+        border: 1px solid #0A4F93;
         z-index: 99;
         ul {
           padding: 10px;
@@ -544,11 +539,11 @@ export default {
             border-radius: 9px;
             display: flex;
             justify-content: space-between;
-            color: #277ffa;
+            color: #0A4F93;
             align-items: center;
             cursor: pointer;
             a {
-              color: #277ffa;
+              color: #0A4F93;
               font-size: 14px;
             }
           }
@@ -623,7 +618,7 @@ export default {
             border-radius: 9px;
             display: flex;
             justify-content: space-between;
-            color: #277ffa;
+            color: #0A4F93;
             align-items: center;
             cursor: pointer;
             font-size: 18px;
@@ -633,7 +628,7 @@ export default {
               margin-right: 10px;
             }
             svg path {
-              fill: #277ffa;
+              fill: #0A4F93;
               transition: 0.2s;
             }
             .line {

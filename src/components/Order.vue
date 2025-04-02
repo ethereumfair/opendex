@@ -1389,7 +1389,7 @@ export default {
           animation: loading 1.25s linear infinite forwards;
         }
         div {
-          border: 3px dashed #277ffa;
+          border: 3px dashed #0A4F93;
           border-radius: 100%;
           width: 18px;
           height: 18px;
@@ -1561,7 +1561,7 @@ export default {
       }
       button {
         width: 100%;
-        background: #277ffa;
+        background: #0A4F93;
         border-radius: 40px;
         height: 55px;
         margin-top: 18px;

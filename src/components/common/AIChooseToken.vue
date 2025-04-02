@@ -41,7 +41,7 @@
             ></path>
             <path
                 d="M581.394286 691.547429v82.779428s1.517714 5.12 10.550857 6.144c6.034286 0.768 9.801143-2.304 11.044571-3.328 3.017143-2.048 143.140571-103.533714 143.140572-103.533714s13.312-6.930286 13.312-20.772572c0-13.586286-9.545143-18.962286-9.545143-18.962285l-143.890286-100.717715s-6.034286-3.602286-14.061714-1.554285c-10.057143 2.56-10.550857 7.954286-10.550857 7.954285v77.403429h-140.617143s-110.226286-15.122286-110.226286-56.905143c0 0 1.755429 131.236571 113.993143 131.236572l136.850286 0.256z"
-                fill="#277FFA"
+                fill="#0A4F93"
                 p-id="1322"
             ></path>
             </svg>
@@ -141,7 +141,7 @@ export default {
     .ai{
         width: .9rem;
         height: .667rem;
-        background: #277FFA;
+        background: #0A4F93;
         border-radius: .2rem;
         opacity: 1;
         text-align: center;
@@ -207,9 +207,9 @@ export default {
     .sure{
         width: 4rem;
         height: 1.11rem;
-        background: #277FFA;
+        background: #0A4F93;
         opacity: 1;
-        border: 1px solid #277FFA;
+        border: 1px solid #0A4F93;
         border-radius: .3rem;
         font-size: .296rem;
         font-family: Poppins-Bold, Poppins;
@@ -221,12 +221,12 @@ export default {
         height: 1.11rem;
         background: #FFFFFF;
         opacity: 1;
-        border: 1px solid #277FFA;
+        border: 1px solid #0A4F93;
         border-radius: .3rem;
         font-size: .296rem;
         font-family: Poppins-Bold, Poppins;
         font-weight: bold;
-        color: #277FFA;
+        color: #0A4F93;
     }
 }
 </style>

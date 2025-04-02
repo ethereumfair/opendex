@@ -107,7 +107,7 @@ export default {
   width: 100%;
   height: 55px;
   line-height: 55px;
-  background: #277FFA;
+  background: #0A4F93;
   border-radius: .445rem;
   font-size: .37rem;
   border: none;
