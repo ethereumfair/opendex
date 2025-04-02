@@ -18,7 +18,7 @@ npm run build
 
 ### document
 ```
-https://deployment-en.allchainbridge.com/
+https://opendex.etherfair.org
 ```
 
 
